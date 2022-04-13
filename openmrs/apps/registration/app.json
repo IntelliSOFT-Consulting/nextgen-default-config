@@ -93,7 +93,7 @@
             ],
             "conceptSetUI": {
                 "REGISTRATION FEES": {
-                    "required": true,
+                    "required": false,
                     "label": "Fee"
                 },
                 "FHS": {
