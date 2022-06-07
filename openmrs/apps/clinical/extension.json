@@ -120,28 +120,6 @@
     "order": 5,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsGeneralPractitionersForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.history",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "Physicians and General Practitioners Form",
-      "default": true
-    },
-    "order": 1,
-    "requiredPrivilege": "app:clinical:history"
-  },
-  "bahmniClinicalConceptSetGroupObservationsGeneralPhysiotherapy": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.history",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "Orthopaedic & Physiotherapy assessment form",
-      "default": true
-    },
-    "order": 2,
-    "requiredPrivilege": "app:clinical:history"
-  },
   "bahmniClinicalConceptSetGroupObservationsHistory": {
     "id": "bahmni.clinical.conceptSetGroup.observations.history",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
