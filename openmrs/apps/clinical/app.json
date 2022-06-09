@@ -42,13 +42,21 @@
                     "ageLimit": 100
                 },
                 "ID_Number": {
-                    "required" : true
+                    "required" : false
                 },
                 "Co-morbidites": {
-                    "excludeFrom": ["HIV Program"]
+                    "excludeFrom": ["General medical check-ups clinic","Orthopedic clinic","Chronic disease management clinic",
+                                     "Physiotherapy and pain management clinic","Lifestyle medicine clinic","Cardiac rehabilitation clinic",
+                                     "Pulmonary rehabilitation clinic","Genetic testing for health clinic","Prenatal and postnatal health clinic",
+                                     "Geriatric health clinic","Exercise nutrition & weight management clinic","Mental wellness clinic","Exercise therapy clinic",
+                                     "Differently abled health clinic","Golf better program","Women's health clinic"]
                 },
                 "Doctor": {
-                    "excludeFrom": ["TB Program"]
+                    "excludeFrom": ["General medical check-ups clinic","Orthopedic clinic","Chronic disease management clinic",
+                                     "Physiotherapy and pain management clinic","Lifestyle medicine clinic","Cardiac rehabilitation clinic",
+                                     "Pulmonary rehabilitation clinic","Genetic testing for health clinic","Prenatal and postnatal health clinic",
+                                     "Geriatric health clinic","Exercise nutrition & weight management clinic","Mental wellness clinic","Exercise therapy clinic",
+                                     "Differently abled health clinic","Golf better program","Women's health clinic"]
                 }
             },
             "patientContext": {
