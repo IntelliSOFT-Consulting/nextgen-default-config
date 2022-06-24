@@ -108,6 +108,22 @@
                 "multiSelect" : true,
                 "autocomplete" : true
             },
+            "PAC Diagnosis" :{
+                "multiSelect" : true,
+                "autocomplete" : true
+            },
+            "Differential Diagnosis" :{
+                "multiSelect" : true,
+                "autocomplete" : true
+            },
+            "Investigations" :{
+                "multiSelect" : true,
+                "autocomplete" : true
+            },
+            "Tuberculosis, Treatment Plan" :{
+                "multiSelect" : true,
+                "autocomplete" : true
+            },  
             "Posture": {
                 "buttonSelect": true
             },
