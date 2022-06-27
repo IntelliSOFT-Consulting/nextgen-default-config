@@ -160,6 +160,48 @@
             "Accepted Family Planning methods": {
                 "multiSelect": true
             },
+            "Current Medical conditions, Lifestyle modification": {
+                "dropdown": true
+            },
+            "Past Medical history, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Past Surgical History, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Family history, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Investigations, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Hormonal findings, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Hormonal treatment plan, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Exercise findings, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Nutritional findings, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Nutritional treatment plan, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Injury findings, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Mental wellness findings, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Mental wellness treatment plans, Lifestyle modification":{
+                "dropdown": true
+            },
+            "Current Medications, Lifestyle modification": {
+                "dropdown": true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
