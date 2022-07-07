@@ -202,6 +202,10 @@
             "Current Medications, Lifestyle modification": {
                 "dropdown": true
             },
+            "Indicator Progress Tracking": {
+                "allowAddMore": true
+               
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
