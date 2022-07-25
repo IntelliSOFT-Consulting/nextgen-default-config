@@ -1,7 +1,6 @@
 {
     "id": "bahmni.clinical",
-    "extensionPoints": [
-        {
+    "extensionPoints": [{
             "id": "org.bahmni.clinical.consultation.board",
             "description": "Bahmni Clinical Consultation Page"
         },
@@ -24,56 +23,58 @@
     ],
     "config": {
         "hideConditions": false,
-        "enableRadiologyOrderOptions":["Urgent","NeedsPrint"],
-        "enableLabOrderOptions":["Urgent", "NeedsPrint"],
-        "quickPrints":false,
-        "networkConnectivity" : {
+        "enableRadiologyOrderOptions": ["Urgent", "NeedsPrint"],
+        "enableLabOrderOptions": ["Urgent", "NeedsPrint"],
+        "quickPrints": false,
+        "networkConnectivity": {
             "showNetworkStatusMessage": false,
             "networkStatusCheckInterval": 20000,
-            "locales" : [
-                { "locale" : "fr", "css" : "offline-language-french"},
-                { "locale" : "es", "css": "offline-language-spanish"},
-                { "locale" : "pt", "css": "offline-language-portuguese-brazil"}
+            "locales": [
+                { "locale": "fr", "css": "offline-language-french" },
+                { "locale": "es", "css": "offline-language-spanish" },
+                { "locale": "pt", "css": "offline-language-portuguese-brazil" }
             ]
         },
-    	"diagnosisStatus": "Inactive",
-            "program": {
-                "patientInformation": {
-                    "ageLimit": 100
-                },
-                "ID_Number": {
-                    "required" : false
-                },
-                "Co-morbidites": {
-                    "excludeFrom": ["General medical check-ups clinic","Orthopedic clinic","Chronic disease management clinic",
-                                     "Physiotherapy and pain management clinic","Lifestyle medicine clinic","Cardiac rehabilitation clinic",
-                                     "Pulmonary rehabilitation clinic","Genetic testing for health clinic","Prenatal and postnatal health clinic",
-                                     "Geriatric health clinic","Exercise nutrition & weight management clinic","Mental wellness clinic","Exercise therapy clinic",
-                                     "Differently abled health clinic","Golf better program","Women's health clinic"]
-                },
-                "Doctor": {
-                    "excludeFrom": ["General medical check-ups clinic","Orthopedic clinic","Chronic disease management clinic",
-                                     "Physiotherapy and pain management clinic","Lifestyle medicine clinic","Cardiac rehabilitation clinic",
-                                     "Pulmonary rehabilitation clinic","Genetic testing for health clinic","Prenatal and postnatal health clinic",
-                                     "Geriatric health clinic","Exercise nutrition & weight management clinic","Mental wellness clinic","Exercise therapy clinic",
-                                     "Differently abled health clinic","Golf better program","Women's health clinic"]
-                }
+        "diagnosisStatus": "Inactive",
+        "program": {
+            "patientInformation": {
+                "ageLimit": 100
             },
-            "patientContext": {
-        		"programAttributes": [
-            		"Id_Number",
-            		"Doctor",
-            		"Stage"
-        		],
-        		"personAttributes": [
-            		"class",
-            		"caste"
-        		],
-        		"additionalPatientIdentifiers": [
-           			"National ID"
-       		],
-        		"preferredIdentifier": "Id_Number"
-    	},
+            "ID_Number": {
+                "required": false
+            },
+            "Co-morbidites": {
+                "excludeFrom": ["General medical check-ups clinic", "Orthopedic clinic", "Chronic disease management clinic",
+                    "Physiotherapy and pain management clinic", "Lifestyle medicine clinic", "Cardiac rehabilitation clinic",
+                    "Pulmonary rehabilitation clinic", "Genetic testing for health clinic", "Prenatal and postnatal health clinic",
+                    "Geriatric health clinic", "Exercise nutrition & weight management clinic", "Mental wellness clinic", "Exercise therapy clinic",
+                    "Differently abled health clinic", "Golf better program", "Women's health clinic"
+                ]
+            },
+            "Doctor": {
+                "excludeFrom": ["General medical check-ups clinic", "Orthopedic clinic", "Chronic disease management clinic",
+                    "Physiotherapy and pain management clinic", "Lifestyle medicine clinic", "Cardiac rehabilitation clinic",
+                    "Pulmonary rehabilitation clinic", "Genetic testing for health clinic", "Prenatal and postnatal health clinic",
+                    "Geriatric health clinic", "Exercise nutrition & weight management clinic", "Mental wellness clinic", "Exercise therapy clinic",
+                    "Differently abled health clinic", "Golf better program", "Women's health clinic"
+                ]
+            }
+        },
+        "patientContext": {
+            "programAttributes": [
+                "Id_Number",
+                "Doctor",
+                "Stage"
+            ],
+            "personAttributes": [
+                "class",
+                "caste"
+            ],
+            "additionalPatientIdentifiers": [
+                "National ID"
+            ],
+            "preferredIdentifier": "Id_Number"
+        },
         "obsIgnoreList": [
             "REGISTRATION FEES",
             "COMMENTS",
@@ -90,40 +91,40 @@
         "allowOnlyCodedDiagnosis": false,
         "conceptSetUI": {
             "Chief Complaint Data": {
-                "autocomplete":true,
-                "codedConceptName":"Chief Complaint",
-                "nonCodedConceptName":"Non-Coded Chief Complaint",
+                "autocomplete": true,
+                "codedConceptName": "Chief Complaint",
+                "nonCodedConceptName": "Non-Coded Chief Complaint",
                 "durationRequired": false,
                 "allowAddMore": true
             },
-            "Current Medical conditions" :{
-                "autocomplete":true,
+            "Current Medical conditions": {
+                "autocomplete": true,
                 "allowAddMore": true
             },
-            "Current Medications" :{
-                "autocomplete":true,
+            "Current Medications": {
+                "autocomplete": true,
                 "allowAddMore": true
             },
-            "Tuberculosis, Adverse Effects" :{
-                "multiSelect" : true,
-                "autocomplete" : true
+            "Tuberculosis, Adverse Effects": {
+                "multiSelect": true,
+                "autocomplete": true
             },
-            "PAC Diagnosis" :{
-                "multiSelect" : true,
-                "autocomplete" : true
+            "PAC Diagnosis": {
+                "multiSelect": true,
+                "autocomplete": true
             },
-            "Differential Diagnosis" :{
-                "multiSelect" : true,
-                "autocomplete" : true
+            "Differential Diagnosis": {
+                "multiSelect": true,
+                "autocomplete": true
             },
-            "Investigations" :{
-                "multiSelect" : true,
-                "autocomplete" : true
+            "Investigations": {
+                "multiSelect": true,
+                "autocomplete": true
             },
-            "Tuberculosis, Treatment Plan" :{
-                "multiSelect" : true,
-                "autocomplete" : true
-            },  
+            "Tuberculosis, Treatment Plan": {
+                "multiSelect": true,
+                "autocomplete": true
+            },
             "Posture": {
                 "buttonSelect": true
             },
@@ -163,40 +164,40 @@
             "Current Medical conditions, Lifestyle modification": {
                 "dropdown": true
             },
-            "Past Medical history, Lifestyle modification":{
+            "Past Medical history, Lifestyle modification": {
                 "dropdown": true
             },
-            "Past Surgical History, Lifestyle modification":{
+            "Past Surgical History, Lifestyle modification": {
                 "dropdown": true
             },
-            "Family history, Lifestyle modification":{
+            "Family history, Lifestyle modification": {
                 "dropdown": true
             },
-            "Investigations, Lifestyle modification":{
+            "Investigations, Lifestyle modification": {
                 "dropdown": true
             },
-            "Hormonal findings, Lifestyle modification":{
+            "Hormonal findings, Lifestyle modification": {
                 "dropdown": true
             },
-            "Hormonal treatment plan, Lifestyle modification":{
+            "Hormonal treatment plan, Lifestyle modification": {
                 "dropdown": true
             },
-            "Exercise findings, Lifestyle modification":{
+            "Exercise findings, Lifestyle modification": {
                 "dropdown": true
             },
-            "Nutritional findings, Lifestyle modification":{
+            "Nutritional findings, Lifestyle modification": {
                 "dropdown": true
             },
-            "Nutritional treatment plan, Lifestyle modification":{
+            "Nutritional treatment plan, Lifestyle modification": {
                 "dropdown": true
             },
-            "Injury findings, Lifestyle modification":{
+            "Injury findings, Lifestyle modification": {
                 "dropdown": true
             },
-            "Mental wellness findings, Lifestyle modification":{
+            "Mental wellness findings, Lifestyle modification": {
                 "dropdown": true
             },
-            "Mental wellness treatment plans, Lifestyle modification":{
+            "Mental wellness treatment plans, Lifestyle modification": {
                 "dropdown": true
             },
             "Current Medications, Lifestyle modification": {
@@ -204,7 +205,55 @@
             },
             "Indicator Progress Tracking": {
                 "allowAddMore": true
-               
+
+            },
+            "Other Medical condition, Specify": {
+                "required": true
+            },
+            "Current Medications, Specify": {
+                "required": true
+            },
+            "Past Medical history, Specify": {
+                "required": true
+            },
+            "Family history, Specify": {
+                "required": true
+            },
+            "Past Surgical History, Specify": {
+                "required": true
+            },
+            "Investigations, Specify": {
+                "required": true
+            },
+            "Hormonal findings, Specify": {
+                "required": true
+            },
+            "Exercise findings, Specify": {
+                "required": true
+            },
+            "Nutritional findings, Specify": {
+                "required": true
+            },
+            "Nutritional treatment plan, Specify": {
+                "required": true
+            },
+            "Injury findings, Specify": {
+                "required": true
+            },
+            "Injury treatment plans, Specify": {
+                "required": true
+            },
+            "Mental wellness findings, Specify": {
+                "required": true
+            },
+            "Mental wellness treatment plans, Specify": {
+                "required": true
+            },
+            "Hormonal treatment plan, Specify": {
+                "required": true
+            },
+            "Exercise treatment plans, Specify": {
+                "required": true
             },
             "defaults": {
                 "Number of living children": 1,
