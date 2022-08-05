@@ -114,11 +114,12 @@
                 "autocomplete": true
             },
             "Differential Diagnosis": {
-                "multiSelect": true,
+                "autocomplete": true
+            },
+            "Diagnosis": {
                 "autocomplete": true
             },
             "Investigations": {
-                "multiSelect": true,
                 "autocomplete": true
             },
             "Tuberculosis, Treatment Plan": {
@@ -253,6 +254,15 @@
                 "required": true
             },
             "Exercise treatment plans, Specify": {
+                "required": true
+            },
+            "Orthopaedic Form Differential Diagnosis, Specify": {
+                "required": true
+            },
+            "Orthopaedic Diagnosis, Specify": {
+                "required": true
+            },
+            "Orthopaedic Investigations, Specify": {
                 "required": true
             },
             "defaults": {
