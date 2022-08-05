@@ -191,4 +191,40 @@ Bahmni.ConceptSet.FormConditions.rules = {
             }
         }
     },
+    "Differential Diagnosis": function(formName, formFieldValues) {
+        var differentialDiagnosis = formFieldValues['Differential Diagnosis'];
+        if (differentialDiagnosis === "Other, Specify") {
+            return {
+                show: ["Orthopaedic Form Differential Diagnosis, Specify"]
+            }
+        } else {
+            return {
+                hide: ["Orthopaedic Form Differential Diagnosis, Specify"]
+            }
+        }
+    },
+    "Diagnosis": function(formName, formFieldValues) {
+        var diagnosis = formFieldValues['Diagnosis'];
+        if (diagnosis === "Other, Specify") {
+            return {
+                show: ["Orthopaedic Form Differential Diagnosis, Specify"]
+            }
+        } else {
+            return {
+                hide: ["Orthopaedic Diagnosis, Specify"]
+            }
+        }
+    },
+    "Investigations": function(formName, formFieldValues) {
+        var investigations = formFieldValues['Investigations'];
+        if (investigations === "Other, Specify") {
+            return {
+                show: ["Orthopaedic Investigations, Specify"]
+            }
+        } else {
+            return {
+                hide: ["Orthopaedic Investigations, Specify"]
+            }
+        }
+    },
 };
