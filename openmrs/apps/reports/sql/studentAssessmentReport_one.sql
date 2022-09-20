@@ -1,4 +1,6 @@
-select * from (
+
+select PatientId as 'Student ID' , PatientName as 'Student Name', weight as 'Weight' , Height , BodyFat as 'Body Fat' , MultistageFitnessTest as 'Multi-Stage Fitness Test' , CoreStrengthTest as 'Core Strenth Test', 
+SitandRecah as 'Sit And Recah Test', TTest as 'T-Test' , 5MspeedTest as '5M Speed Test' , 20MspeedTest as '20M Speed Test', VerticalJumpTest as 'Vertical Jump Test'  from (
 select identifier as 'PatientId', PatientName as 'PatientName', weight , Height , BodyFat , MultistageFitnessTest , CoreStrengthTest ,
 SitandRecah , TTest , 5MspeedTest , 20MspeedTest, VerticalJumpTest from (
 select distinct(pa.person_id) as pid, concat(coalesce(given_name, ''), "  ", coalesce(middle_name, ''), ' ', coalesce(family_name , '') ) as 'PatientName', 
