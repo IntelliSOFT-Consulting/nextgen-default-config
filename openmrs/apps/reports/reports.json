@@ -702,5 +702,35 @@
     "config": {
         "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/studentAssessmentReport.sql"
     }
-}
+}, 
+"studentAssessmentReport": {
+    "name": "Student Assessment Report",
+    "type": "concatenated",
+    "config": {
+    "reports": [
+            {
+                "name": "Student Assessment Report",
+                "type": "MRSGeneric",
+                "config": {
+                    "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/studentAssessmentReport_one.sql"
+                }
+            } ,
+            {
+                "name": "Student Asssessment Report Continuation",
+                "type": "MRSGeneric",
+                "config": {
+                    "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/studentAssessmentReport.sql"
+                }
+            } ,
+            { 
+                "name": "Key",
+                "type": "MRSGeneric",
+                "config": {
+                    "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/studentAssessmentReport_key.sql"
+                }
+
+            } 										
+        ]
+    }
+} 
 }
