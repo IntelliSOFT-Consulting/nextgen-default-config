@@ -536,5 +536,24 @@
                 }
             }
         }
+    },
+    "patientSummarys":{  
+        "translationKey":"DASHBOARD_TAB_STUDENT_ASSESSMENT_KEY",
+        "maxRecentlyViewedPatients":10,
+        "sections":{  
+            "HistoryAndExamination":{  
+                "type":"historyAndExamination",
+                "isObservation":true,
+                "displayType":"Full-Page",
+                "dashboardConfig":{  
+                    "showGroupDateTime":false,
+                    "conceptNames":[  
+                        "Student Assessment Form"
+                    ]
+                },
+                "displayOrder":1,
+                "translationKey":"DASHBOARD_TITLE_STUDENT_ASSESSMENT_REPORT_KEY"
+            }
+        }
     }
 }
