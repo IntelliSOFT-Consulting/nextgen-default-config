@@ -29,15 +29,22 @@
                 "additionalPatientInformation": {
                     "title": "Additional Patient Information",
                     "attributes": [
-                        "distanceFromCenter",
-                        "isUrban",
-                        "cluster",
-                        "RationCard",
-                        "familyIncome",
-                        "debt",
-                        "cluster",
                         "email"
                     ]
+                },
+                "registerNewPatient1": {
+                    "title": "Gurdian Information",
+                    "translationKey": "REGISTRATION_GURDIAN_LABEL_INFO_KEY",
+                    "attributes": [
+						"studentNextOfKin",
+                        "studentNextOfKinRelationship",
+                        "studentNextOfKinContacts"
+
+
+                        
+                    ],
+					"expand": true,
+					"order": 2
                 },
                 "hidden": {
                     "attributes": [
