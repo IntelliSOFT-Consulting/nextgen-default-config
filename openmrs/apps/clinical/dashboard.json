@@ -329,6 +329,103 @@
             }
         }
     },
+    "studentDashboard":{  
+        "translationKey":"Student Dashboard",
+        "displayByDefault":true,
+        "maxRecentlyViewedPatients":10,
+        "requiredPrivilege": "app:clinical:observationTabs",
+        "sections":{  
+            "patientInformation":{  
+                "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
+                "type":"patientInformation",
+                "displayOrder":0,
+                "ageLimit":100,
+                "patientAttributes":[  
+
+                ],
+                "addressFields":[  
+                    "address1",
+                    "address2",
+                    "cityVillage",
+                    "countyDistrict"
+                ]
+            },
+         
+            "navigationLinksControl":{  
+                "translationKey":"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
+                "type":"navigationLinksControl",
+                "displayOrder":2,
+                "showLinks":[  
+                    "home",
+                    "visit",
+                    "registration"
+                ]
+            },
+
+            "secondVitals":{  
+                "translationKey":"DASHBOARD_TITLE_STUDENT_ASSESSMENTS_KEY",
+                "type":"Student Assessments",
+                "isObservation":true,
+                "displayOrder":13,
+                "dashboardConfig":{  
+                    "showDetailsButton":true,
+                    "conceptNames":[  
+                        "Student Assessment Form"
+                    ],
+                    "numberOfVisits":2
+                },
+                "expandedViewConfig":{  
+                    "conceptNames":[  
+                        "Student Assessment Form"
+                    ],
+                    "numberOfVisits":2,
+                    "showDetailsButton":true,
+                    "pivotTable":{  
+
+                    }
+                }
+            },
+
+            "nutritionalValues":{  
+                "translationKey":"DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
+                "type":"vitals",
+                "isObservation":true,
+                "displayOrder":11,
+                "dashboardConfig":{  
+                    "conceptNames":[  
+                        "HEIGHT",
+                        "Weight",
+                        "BMI Data",
+                        "BMI Status Data"
+                    ],
+                    "showDetailsButton":true,
+                    "numberOfVisits":2
+                },
+                "expandedViewConfig":{  
+                    "conceptNames":[  
+                        "HEIGHT",
+                        "Weight",
+                        "BMI",
+                        "BMI STATUS"
+                    ],
+                    "numberOfVisits":2,
+                    "scope":"latest",
+                    "showDetailsButton":true,
+                    "pivotTable":{  
+
+                    }
+                }
+            },
+            "patientAppointments": {
+                "type": "custom",
+                "displayOrder": 22,
+                "config": {
+                    "title": "DASHBOARD_TITLE_STUDENT_APPOINTMENT_KEY",
+                    "template": "<patient-appointments-dashboard section='config' patient='patient'></patient-appointments-dashboard>"
+                }
+            }
+        }
+    },
     "trends":{  
         "translationKey":"DASHBOARD_TAB_TRENDS_KEY",
         "maxRecentlyViewedPatients":10,
